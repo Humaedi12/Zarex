@@ -1,0 +1,12 @@
+#=======INSTALL SCRIPT
+termux-setup-storage
+apt update && apt upgrade -y
+apt install python -y
+python -m pip install requests
+python -m pip install rich
+apt install git -y
+git clone https://github.com/humaedi12/zarex
+#=======RUN SCRIPT
+cd zarex
+git pull
+python zarex.python
